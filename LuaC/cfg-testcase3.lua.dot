@@ -1,0 +1,10 @@
+digraph {
+"00F7FDC8" [label="[main_0]\l_t0 <- print call enter a number:\l_t1 <- io.read call *number\ln <- _t1 = _t1\lfactorial <- 1.000000 = 1.000000\lx <- 1.000000 = 1.000000\li <- 2.000000 = 2.000000\lTrue:  main_2\l"]
+"00F7FDC8" -> "00F80788"
+"00F80788" [label="[main_2]\l_t2 <- i <= n\lTrue:  main_3\lFalse: main_1\l"]
+"00F80788" -> "00F80608"
+"00F80788" -> "00F7FE28"
+"00F7FE28" [label="[main_1]\l_t4 <- io.write call factorial of \l_t5 <- io.write call n\l_t6 <- io.write call  is \l_t7 <- print call x\l"]
+"00F80608" [label="[main_3]\l_t3 <- x * i\lx <- _t3 = _t3\li <- i + 1.000000\lTrue:  main_2\l"]
+"00F80608" -> "00F80788"
+}

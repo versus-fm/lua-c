@@ -1,0 +1,18 @@
+digraph {
+"00F80B48" [label="[fibonacci_0]\l_t0 <- n < 3.000000\lTrue:  fibonacci_3\lFalse: fibonacci_4\l"]
+"00F80B48" -> "00F80C08"
+"00F80B48" -> "00F80908"
+"00F80908" [label="[fibonacci_4]\l_t3 <- n - 1.000000\l_t2 <- fibonacci call _t3\l_t5 <- n - 2.000000\l_t4 <- fibonacci call _t5\l_t1 <- _t2 + _t4\l_ret <- _t1 return _t1\lTrue:  fibonacci_2\l"]
+"00F80908" -> "00F80BA8"
+"00F80BA8" [label="[fibonacci_2]\ln <- n arg n\l"]
+"00F80C08" [label="[fibonacci_3]\l_ret <- 1.000000 return 1.000000\lTrue:  fibonacci_2\l"]
+"00F80C08" -> "00F80BA8"
+"00F80248" [label="[main_0]\ln <- 1.000000 = 1.000000\lTrue:  main_6\l"]
+"00F80248" -> "00FB0A18"
+"00FB0A18" [label="[main_6]\l_t6 <- n <= 16.000000\lTrue:  main_7\lFalse: main_5\l"]
+"00FB0A18" -> "00FB0898"
+"00FB0A18" -> "00FB09B8"
+"00FB0898" [label="[main_7]\l_t8 <- fibonacci call n\l_t7 <- io.write call _t8\l_t9 <- io.write call , \ln <- n + 1.000000\lTrue:  main_6\l"]
+"00FB0898" -> "00FB0A18"
+"00FB09B8" [label="[main_5]\l_t10 <- io.write call ...\n\l"]
+}

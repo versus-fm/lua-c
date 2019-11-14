@@ -1,0 +1,17 @@
+digraph {
+"00F804E8" [label="[main_0]\l_t0 <- print call enter a number:\l_t1 <- io.read call *number\ln <- _t1 = _t1\li <- 2.000000 = 2.000000\lTrue:  main_2\l"]
+"00F804E8" -> "00F80548"
+"00F80548" [label="[main_2]\l_t2 <- i <= n\lTrue:  main_3\lFalse: main_1\l"]
+"00F80548" -> "00F7FF48"
+"00F80548" -> "00F80128"
+"00F7FF48" [label="[main_3]\l_t3 <- io.write call i\l_t5 <- n % i\l_t4 <- _t5 == 0.000000\lTrue:  main_5\lFalse: main_6\l"]
+"00F7FF48" -> "00F80428"
+"00F7FF48" -> "00F805A8"
+"00F80128" [label="[main_1]\l"]
+"00F80428" [label="[main_5]\l_t6 <- io.write call  is a factor of \lTrue:  main_4\l"]
+"00F80428" -> "00F7FD68"
+"00F7FD68" [label="[main_4]\l_t8 <- print call n\li <- i + 1.000000\lTrue:  main_2\l"]
+"00F7FD68" -> "00F80548"
+"00F805A8" [label="[main_6]\l_t7 <- io.write call  is not a factor of \lTrue:  main_4\l"]
+"00F805A8" -> "00F7FD68"
+}

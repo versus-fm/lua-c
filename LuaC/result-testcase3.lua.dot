@@ -1,0 +1,129 @@
+digraph {
+  0[label="Sequence"];
+  1[label="CallStatement"];
+  0 -> 1
+  2[label="Call"];
+  1 -> 2
+  3[label="print"];
+  2 -> 3
+  4[label="Constant: enter a number:"];
+  2 -> 4
+  5[label="Assignment"];
+  0 -> 5
+  6[label="ExpressionList"];
+  5 -> 6
+  7[label="n"];
+  6 -> 7
+  8[label="ExpressionList"];
+  5 -> 8
+  9[label="Call"];
+  8 -> 9
+  10[label="SubAccess"];
+  9 -> 10
+  11[label="io"];
+  10 -> 11
+  12[label="read"];
+  10 -> 12
+  13[label="ExpressionList"];
+  9 -> 13
+  14[label="Constant: *number"];
+  13 -> 14
+  15[label="Assignment"];
+  0 -> 15
+  16[label="ExpressionList"];
+  15 -> 16
+  17[label="factorial"];
+  16 -> 17
+  18[label="ExpressionList"];
+  15 -> 18
+  19[label="Constant: 1"];
+  18 -> 19
+  20[label="Assignment"];
+  0 -> 20
+  21[label="ExpressionList"];
+  20 -> 21
+  22[label="x"];
+  21 -> 22
+  23[label="ExpressionList"];
+  20 -> 23
+  24[label="Constant: 1"];
+  23 -> 24
+  25[label="For"];
+  0 -> 25
+  26[label="Assignment"];
+  25 -> 26
+  27[label="i"];
+  26 -> 27
+  28[label="Constant: 2"];
+  26 -> 28
+  29[label="n"];
+  25 -> 29
+  30[label="Sequence"];
+  25 -> 30
+  31[label="Assignment"];
+  30 -> 31
+  32[label="ExpressionList"];
+  31 -> 32
+  33[label="x"];
+  32 -> 33
+  34[label="ExpressionList"];
+  31 -> 34
+  35[label="*"];
+  34 -> 35
+  36[label="x"];
+  35 -> 36
+  37[label="i"];
+  35 -> 37
+  38[label="CallStatement"];
+  0 -> 38
+  39[label="Call"];
+  38 -> 39
+  40[label="SubAccess"];
+  39 -> 40
+  41[label="io"];
+  40 -> 41
+  42[label="write"];
+  40 -> 42
+  43[label="ExpressionList"];
+  39 -> 43
+  44[label="Constant: factorial of "];
+  43 -> 44
+  45[label="CallStatement"];
+  0 -> 45
+  46[label="Call"];
+  45 -> 46
+  47[label="SubAccess"];
+  46 -> 47
+  48[label="io"];
+  47 -> 48
+  49[label="write"];
+  47 -> 49
+  50[label="ExpressionList"];
+  46 -> 50
+  51[label="n"];
+  50 -> 51
+  52[label="CallStatement"];
+  0 -> 52
+  53[label="Call"];
+  52 -> 53
+  54[label="SubAccess"];
+  53 -> 54
+  55[label="io"];
+  54 -> 55
+  56[label="write"];
+  54 -> 56
+  57[label="ExpressionList"];
+  53 -> 57
+  58[label="Constant:  is "];
+  57 -> 58
+  59[label="CallStatement"];
+  0 -> 59
+  60[label="Call"];
+  59 -> 60
+  61[label="print"];
+  60 -> 61
+  62[label="ExpressionList"];
+  60 -> 62
+  63[label="x"];
+  62 -> 63
+}

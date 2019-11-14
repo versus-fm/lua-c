@@ -1,0 +1,45 @@
+digraph {
+  0[label="Sequence"];
+  1[label="CallStatement"];
+  0 -> 1
+  2[label="Call"];
+  1 -> 2
+  3[label="print"];
+  2 -> 3
+  4[label="ExpressionList"];
+  2 -> 4
+  5[label="*"];
+  4 -> 5
+  6[label="+"];
+  5 -> 6
+  7[label="-"];
+  6 -> 7
+  8[label="+"];
+  7 -> 8
+  9[label="pow"];
+  8 -> 9
+  10[label="Constant: 2"];
+  9 -> 10
+  11[label="*"];
+  9 -> 11
+  12[label="Constant: 4"];
+  11 -> 12
+  13[label="Constant: 2"];
+  11 -> 13
+  14[label="Constant: 10"];
+  8 -> 14
+  15[label="*"];
+  7 -> 15
+  16[label="Constant: 2"];
+  15 -> 16
+  17[label="Constant: 6"];
+  15 -> 17
+  18[label="/"];
+  6 -> 18
+  19[label="Constant: 1"];
+  18 -> 19
+  20[label="Constant: 4"];
+  18 -> 20
+  21[label="Constant: 2"];
+  5 -> 21
+}

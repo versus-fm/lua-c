@@ -1,0 +1,3 @@
+digraph {
+"00F80728" [label="[main_0]\lx <- 7.000000 = 7.000000\l_t1 <- 10.000000 + x\l_t0 <- _t1 * 2.000000\ly <- _t0 = _t0\l_t2 <- y - x\lz <- _t2 = _t2\l_t3 <- print call x\l_t4 <- print call y\l_t5 <- print call z\l_t6 <- z * z\lz <- _t6 = _t6\l_t7 <- print call z\l"]
+}
